@@ -1,21 +1,19 @@
-# Next.js + Tailwind CSS Example
+ # OpenMDB
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## What is OpenMDB's API?
 
-## Deploy your own
+The API service is for those of you interested in using our movie, TV show and/or data in your application. Our API is a system we provide for you and your team to programmatically fetch and use our data and/or images.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+screenShots
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+![screenShot](./assets/Screenshot1.png)
 
-## How to use
+![screenShot](./assets/Screenshot2.png)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+![screenShot](./assets/Screenshot3.png)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+![screenShot](./assets/Screenshot4.png)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+![screenShot](./assets/Screenshot5.png)
+
+![screenShot](./assets/Screenshot6.png)
