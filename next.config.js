@@ -6,6 +6,6 @@ module.exports = {
   },
   env: {
     REACT_APP_GOOGLE_API_TOKEN: '',
-    REACT_APP_FACEBOOK_ID: '488007309380767'
+    REACT_APP_FACEBOOK_ID: ''
   },
 }
