@@ -55,7 +55,7 @@ const Login = () => {
           <Link href="/" passHref>
             <div className="flex mb-8 ml-[-10px] items-center cursor-pointer">
               <Image src={logo} alt="openMDB" height={40} width={40} />
-              <div className="ml-[0.2rem] text-white font-semibold text-2xl">OpenMDB</div>
+              <div className="ml-[0.1rem] text-white font-semibold text-2xl">OpenMDB</div>
             </div>
           </Link>
 
