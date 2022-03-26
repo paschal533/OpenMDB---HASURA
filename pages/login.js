@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 import GoogleLogin from 'react-google-login';
 import { FcGoogle } from 'react-icons/fc';
 import { GrFacebookOption } from 'react-icons/gr';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import logo from '../assets/openMDB.png';
 import BGImage from '../assets/home-bg.jpg';
 import { Loader } from '../components';
@@ -21,22 +20,9 @@ const Login = () => {
     if (User) router.push('/');
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const responseFacebook = (response) => {
-    setLoading(true);
-    const { name, id } = response;
-    const doc = {
-      _id: id,
-      _type: 'user',
-      userName: name,
-      image: response.picture.data.url,
-    };
-    localStorage.setItem('user', JSON.stringify(doc));
-    setLoading(false);
-    router.push('/')
-  };
-
   const responseGoogle = (response) => {
     setLoading(true);
+    console.log(response);
     const { name, googleId, imageUrl } = response.profileObj;
     const doc = {
       _id: googleId,
@@ -89,23 +75,6 @@ const Login = () => {
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
               cookiePolicy="single_host_origin"
-            />
-          </div>
-          <div className="shadow-2xl">
-            <FacebookLogin
-              appId={process.env.REACT_APP_FACEBOOK_ID}
-              fields="name,email,picture"
-              callback={responseFacebook}
-              disableMobileRedirect
-              render={(renderProps) => (
-                <button
-                  type="button"
-                  className="bg-blue-500 flex text-white btn p-3 mt-3 justify-center items-center rounded-lg cursor-pointer outline-none"
-                  onClick={renderProps.onClick}
-                >
-                  <GrFacebookOption /> Sign in with facebook
-                </button>
-              )}
             />
           </div>
         </div>
