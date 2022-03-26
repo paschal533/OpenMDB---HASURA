@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Code = () => {
-  return `fetch('http://localhost:3000/api/getAllMovies')
+  return `fetch('https://openmdb.netlify.app/api/getAllMovies')
   .then(function(response) {
     return response.json();
   }).then(function(data) {
