@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Code = () => {
-  return `fetch('/api/getRomanticMovies')
+  return `fetch('https://openmdb.netlify.app/api/getRomanticMovies')
   .then(function(response) {
     return response.json();
   }).then(function(data) {
@@ -34,7 +34,7 @@ export default function Romantic() {
       <h1 className="font-extrabold text-2xl">Get Romantic Movies</h1>
 
       <p className="font-medium mt-4">the API EndPoint</p>
-      <p className="font-medium mt-2">http://localhost:3000/api/getRomanticMovies</p>
+      <p className="font-medium mt-2">https://openmdb.netlify.app/api/getRomanticMovies</p>
       <div>
         <p className="font-semibold mt-4">Code example</p>
         <div className="bg-[#04111d] w-[100%] codePadding mt-4">
