@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Code = () => {
-  return `fetch('/api/searchMovie/adam')
+  return `fetch('https://openmdb.netlify.app/api/searchMovie/adam')
   .then(function(response) {
     return response.json();
   }).then(function(data) {
@@ -34,7 +34,7 @@ export default function SearchQuery() {
       <h1 className="font-extrabold text-2xl">Search For A Movie</h1>
 
       <p className="font-medium mt-4">the API EndPoint</p>
-      <p className="font-medium mt-2">http://localhost:3000/api/searchMovie/:query</p>
+      <p className="font-medium mt-2">https://openmdb.netlify.app/api/searchMovie/:query</p>
       <div>
         <p className="font-semibold mt-4">Code example</p>
         <div className="bg-[#04111d] w-[100%] codePadding mt-4">
