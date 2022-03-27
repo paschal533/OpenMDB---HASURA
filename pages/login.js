@@ -32,7 +32,7 @@ const Login = () => {
     };
     localStorage.setItem('user', JSON.stringify(doc));
     setLoading(false)
-    router.push('/')
+    router.back();
   };
 
   return (
@@ -61,7 +61,7 @@ const Login = () => {
 
           <div className="shadow-2xl">
             <GoogleLogin
-              clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
+              clientId="1051275620837-s07jtgpr0mrqcs4qbff657dnbh147v4a.apps.googleusercontent.com"
               render={(renderProps) => (
                 <button
                   type="button"
