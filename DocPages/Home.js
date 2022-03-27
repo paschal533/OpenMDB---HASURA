@@ -6,7 +6,7 @@ export default function Home() {
        <div>
           <h1 className="font-bold mb-1">OpenMDB API</h1>
           <hr />
-          <p className="mt-3"> The Open Movie Database API is a RESTful web service to obtain movie information.
+          <p className="mt-3"> The Open Movie Database API is a GraphQL web service to obtain movie information.
           All content and images on 
           the site are contributed and maintained by the dev Team of OpenMDB.
 
