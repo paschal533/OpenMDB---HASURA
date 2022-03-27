@@ -93,10 +93,10 @@ const Header = () => {
               />
             </div>
             <div className={style.headerItems}>
-              <Link href="/dashboard" passHref>
+              <Link href="/docs/home" passHref>
                 <div className={style.headerItem}>For developers</div>
               </Link>
-              <Link href="/docs" passHref>
+              <Link href="/docs/home" passHref>
                 <div className={style.headerItem}> Docs </div>
               </Link>
               <Link href="/login" passHref> 

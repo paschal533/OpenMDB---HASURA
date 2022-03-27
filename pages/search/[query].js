@@ -52,8 +52,8 @@ const Search = () => {
              )
            })}
         </div> : 
-        <div className="text-white pl-[5px] pr-[2px] flex flex-col space-y-4 w-full mt-[20px] justify-center items-center align-middle">
-          <h2 className="font-semibold text-2xl mb-[40px]">Sorry, the movie &quot{query}&quot can not be found.</h2>
+        <div className="text-white pl-[4px] pr-[2px] flex flex-col space-y-4 w-full mt-[20px] justify-center items-center align-middle">
+          <h2 className="font-semibold text-2xl mb-[40px]">Sorry, the movie &quot;{query}&quot; can not be found.</h2>
           <Image objectFit="fill" alt="notFound" src={NotFound} className="rounded-lg w-[250px] h-[270px]" />
         </div>}
     </div>
