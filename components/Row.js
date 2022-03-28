@@ -7,12 +7,10 @@ const Row = () => {
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const endpoint = '/api/getTrendingMovies';
-
   useEffect(() => {
     const getTrendingData = async () => {
       try {
-        await fetch(endpoint)
+        await fetch('/api/getTrendingMovies')
           .then(function(response) {
             return response.json();
           }).then(function(data) {
@@ -24,7 +22,7 @@ const Row = () => {
       }
     } 
     getTrendingData();
-  }, [endpoint]);
+  }, []);
 
   return (
     <div className="bg-[#111]">
