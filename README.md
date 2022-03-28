@@ -11,9 +11,3 @@ screenShots
 ![screenShot](./assets/Screenshot2.png)
 
 ![screenShot](./assets/Screenshot3.png)
-
-![screenShot](./assets/Screenshot4.png)
-
-![screenShot](./assets/Screenshot5.png)
-
-![screenShot](./assets/Screenshot6.png)
