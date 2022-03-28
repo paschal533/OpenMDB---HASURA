@@ -69,7 +69,7 @@ const UserProfile = () => {
             />
           </div>
         </div>
-        <div className="text-center h-full mb-7">
+        <div className="text-center cursor-pointer h-full mb-7">
           <GoogleLogout
               clientId={`${process.env.REACT_APP_GOOGLE_API_TOKEN}`}
               render={(renderProps) => (
